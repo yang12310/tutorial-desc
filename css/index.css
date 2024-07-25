@@ -1,0 +1,31 @@
+@import url(./reset.css);
+@import url(./style.css);
+body {
+  background: #272727;
+}
+
+.wrap {
+  position: relative;
+}
+
+.left {
+  width: calc(100% - 800px);
+}
+
+.right {
+  width: 800px;
+  padding-left: 125px;
+  border-left: rgba(244, 244, 248, 0.37);
+}
+.right .name_box {
+  font-size: 30px;
+  padding: 50px;
+  background: #F4F4F8;
+  color: #272727;
+  text-align: center;
+}
+.right .name_box span {
+  padding-right: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */

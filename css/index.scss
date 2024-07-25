@@ -1,0 +1,12 @@
+@import url(./reset.css);
+@import url(./style.css);
+
+body{background:#272727;}
+.wrap{position:relative; }
+.left{width:calc(100% - 800px)}
+.right{ width:800px;padding-left:125px; border-left: rgb(244 244 248 / 37%);
+  .img_box{}
+  .name_box{font-size: 30px; padding:50px; background:#F4F4F8; color:#272727;  text-align:center;
+    span{padding-right: 10px;}
+  }
+}
