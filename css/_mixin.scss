@@ -1,0 +1,72 @@
+// @import "./variable";
+
+// 모바일
+$mobile: 350px;
+
+// 모바일에서 태블릿
+$tabletToMobile: 500px;
+
+// 태블릿
+$tablet: 760px;
+
+// 태블릿에서 노트북
+$laptopToTablet: 860px;
+
+// 노트북
+$laptop: 1024px;
+
+// 노트북에서 데스크탑
+$desktopToLaptop: 1440px;
+
+// 데스크탑
+$desktop: 1600px;
+
+
+//모바일 : 최소 '모바일'사이즈부터 ~ 최대 '모바일에서 태블릿'사이즈까지
+@mixin mobile {
+  @media ( max-width: $mobile) {
+    @content;
+  }
+}
+
+// 모바일에서 태블릿 : 최소 '모바일에서 태블릿'사이즈부터 ~ 최대 '태블릿'사이즈까지
+@mixin tabletToMobile {
+  @media (max-width:$tabletToMobile) {
+    @content;
+  }
+}
+
+// 태블릿 : 최소'태블릿'사이즈부터 ~ 최대 '태블릿에서 노트북'사이즈까지
+@mixin tablet {
+  @media (max-width:$tablet) {
+    @content;
+  }
+}
+
+// 태블릿에서 노트북 : 최소 '태블릿에서 노트북'사이즈부터 ~ 최대 '노트북'사이즈까지
+@mixin laptopToTablet {
+  @media ( max-width:$laptopToTablet) {
+    @content;
+  }
+}
+
+// 노트북 : 최소 '노트북'사이즈부터 ~ 최대 '노트북에서 데스크탑'사이즈까지
+@mixin laptop {
+  @media (max-width:$laptop) {
+    @content;
+  }
+}
+
+// 노트북에서 데스크탑 : 최소 '노트북에서 데스크탑'사이즈부터 ~ 최대 '데스크탑'사이즈까지 
+@mixin desktopToLaptop {
+  @media (max-width:$desktopToLaptop) {
+    @content;
+  }
+}
+
+@mixin desktop {
+    @media (max-width:$desktop) {
+      @content;
+    }
+  }
+

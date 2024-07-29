@@ -3,22 +3,182 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PORTFOLIO</title>
+  <title>Description</title>
 
   <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
   <div class="wrap">
-    <div class="left">
-      
-    </div>
-    <div class="right">
-      <div class="img_box">
-        <img src="" alt="profile" style="background: #000;">
+    <header>
+      <nav class="bd-xl">
+        <ul>
+          <li><a href="#check2">포트폴리오 개요</a></li>
+          <li><a href="#check3">시스템구성/적용기술</a></li>
+          <li><a href="#check4">사용시나리오</a></li>
+          <li><a href="#check5">주요기능 설명</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- 오프닝페이지 -->
+    <section id="check1" class="sec01">
+      <div class="bd-xl">
+        <div>
+          <div>
+            <i><img src="./img/logo.png" alt="logo"></i>
+            <span>기능 설명서</span>
+          </div>
+          <i><img src="./img/m1.png" alt=""></i>
+        </div>
+        <p>최유진</p>
       </div>
-      <div class="name_box"><p><span>최유진</span>YUJIN CHOI</p></div>
-      <a href="https://yang12310.github.io/portfolio-client/" target="_blank">포폴들어가기</a>
-    </div>
+
+    </section>
+
+    <!-- 개요 -->
+    <section id="check2" class="sec03">
+      <div class="bd-xl">
+        <h3>01. 포트폴리오 개요</h3>
+        <div>
+          <div class="left">
+            <ul>
+              <li>
+                <p>U-Jeans는 Front-End 개발자 취업을 위한 Portfolio로 개발된 SNS(Social Network System) 시스템입니다. </p>
+              </li>
+              <li>
+                <p>U-Jeans는 Figma를 이용한 UI 디자인과, Client Side는 React, Redux-Toolkit으로 기능을 구현하였고, Server Side는 Node.js, JWT로 기능을 구현하였으며, Database는 MongoDB를 사용한 MERN Full-Stack 시스템입니다. </p>
+              </li>
+              <li>
+                <p>주요 기능으로는 회원가입, 로그인, Post등록 및 수정, 삭제기능과 친구추가, 삭제기능 등이 있습니다.</p>
+              </li>
+              <li>
+                <p>
+                  Server는 AWS Lightsail Cloud에서 서비스되고 있으며, Client는 Github에 배포하였습니다.
+                </p>
+              </li>
+              <li>
+                <p>참고로 본 포트폴리오인 U-Jeans 브랜드 의미는 도전과 개척, 진취성을 의미합니다. 
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="right"><img src="./img/sec01.png" alt="main page"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 시스템구성 및 적용기술 -->
+    <section id="check3" class="sec04">
+      <div class="bd-xl">
+        <h3>02. 시스템구성 및 적용기술</h3>
+        <div>
+          <p>U-Jeans 개발환경은 다음과 같습니다.</p>
+          <div>
+            <i><img src="./img/dc01.png" alt="시스템구성 이미지"></i>
+            <ul>
+              <li>
+                <span><em>01</em>개발플랫폼(Hardware)</span>
+                <p>MacBook Air Retina, macOS Sonoma 14.5, 8G</p>
+              </li>
+              <li>
+                <span><em>02</em>디자인 (Figma)</span>
+                <p>웹디자인 2년 경력을 바탕으로 Figma로 직접 디자인하였습니다.</p>
+              </li>
+              <li>
+                <span><em>03</em>Front-End</span>
+                <p>HTML / CSS / JavaScript 및 React, Redux-Toolkit, Formik등으로 Client측 기능을 구현하였습니다. </p>
+              </li>
+              <li>
+                <span><em>04</em>Back-End</span>
+                <p>Node.js환경에서 JWT를 적용하여 Server측 기능을 구현하였습니다.</p>
+              </li>
+             <li>
+                <span><em>05</em>Database</span>
+                <p>Database는 MongoDB를 사용하였습니다.</p>
+              </li>
+            </ul>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- 사용 시나리오  -->
+    <section id="check4" class="sec05">
+      <div class="bd-xl">
+        <h3>03. 사용 시나리오</h3>
+        <div>
+          <img src="./img/dc02.png" alt="사용시나리오 이미지">
+        </div>
+      </div>
+    </section>
+
+    <!-- 주요기능 설명  -->
+    <section id="check5" class="sec06">
+      <div class="bd-xl">
+        <h3>04. 주요기능 설명</h3>
+        <div>
+          <ul class="set01">
+            <li>
+              <div>
+                <div>
+                  <h4><span>1</span>사용자 등록</h4>
+                  <p>이름(First Name, Last Name), 지역(Location), 직업(Occupation),
+                    사용자이미지(Picture), 이메일(Email), 비밀번호(Password)를 입력합니다.
+                  </p>
+                </div>
+                <i><img src="./img/05_1.png" alt=""></i>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div>
+                  <h4><span>2</span>로그인 / 로그아웃</h4>
+                  <p>이메일(Email), 비밀번호(Password)를 입력합니다.</p>
+                  <p>로그아웃 메뉴를 선택합니다. </p>
+                </div>
+                <i><img src="./img/05_3.png" alt=""></i>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div>
+                  <h4><span>3</span>Home</h4>
+                  <p>로그인하면 Home 화면이 Display됩니다.</p>
+                  <p>Home 화면에서는 Post 전체보기 ,Mypage 이동, 친구추가, 친구삭제, 친구페이지 방문하기  등의 기능이 있습니다.
+                  </p>
+                  <p>모든 사용자가 등록한 Post를 볼 수 있습니다. </p>
+                </div>
+                <i><img src="./img/05_4.png" alt=""></i>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div>
+                  <h4><span>4</span>Mypage 이동</h4>
+                  <p>내가 작성한 Post를 확인, 등록, 수정, 삭제할 수 있습니다.</p>
+                  <p>등록된 사용자 중 친구로 등록하거나 등록된 친구를 삭제할 수 있습니다. </p>
+                  <p>친구 페이지를 방문하여 친구가 작성한 Post를 볼 수 있습니다. </p>
+                </div>
+                <i><img src="./img/05_2.png" alt=""></i>
+              </div>
+            </li>
+            
+          </ul>
+          <ul class="set02">
+              <li>
+                
+              </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </div>
+
+  <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    
+  </script>
+  
 </body>
 </html>

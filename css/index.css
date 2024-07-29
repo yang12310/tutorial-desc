@@ -1,31 +1,360 @@
 @import url(./reset.css);
 @import url(./style.css);
-body {
-  background: #272727;
-}
-
 .wrap {
-  position: relative;
+  background: #E9E9E9;
 }
 
-.left {
-  width: calc(100% - 800px);
+header {
+  position: fixed;
+  padding: 32px 0px;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #131313;
 }
-
-.right {
-  width: 800px;
-  padding-left: 125px;
-  border-left: rgba(244, 244, 248, 0.37);
+header nav {
+  width: 100%;
 }
-.right .name_box {
-  font-size: 30px;
-  padding: 50px;
-  background: #F4F4F8;
-  color: #272727;
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  width: 25%;
   text-align: center;
 }
-.right .name_box span {
-  padding-right: 10px;
+header nav ul li a {
+  display: block;
+  width: 100%;
+}
+
+section > div h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #131313;
+  padding: 20px 0px 20px 10px;
+  border-bottom: 1px solid #131313;
+  border-top: 1px solid #131313;
+}
+section > div > div {
+  padding: 100px 0px;
+}
+
+.sec01 {
+  height: 100vh;
+  position: relative;
+}
+.sec01 > div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.sec01 > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec01 > div > div > div i {
+  width: 500px;
+  display: block;
+}
+.sec01 > div > div > i {
+  position: relative;
+  display: block;
+  width: 500px;
+}
+.sec01 > div > div span {
+  font-size: 32px;
+}
+.sec01 > div > div > i:before {
+  position: absolute;
+  content: "";
+  width: 470px;
+  height: 470px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow: -4px 3px 10px rgba(0, 0, 0, 0.07);
+  z-index: -1;
+}
+.sec01 > div p {
+  text-align: right;
+  font-size: 20px;
+  padding-top: 70px;
+}
+
+.sec03 > div div {
+  display: flex;
+}
+.sec03 > div .left {
+  width: 50%;
+  margin-right: 60px;
+  padding-top: 20px;
+}
+.sec03 > div .left ul li p {
+  position: relative;
+  padding-left: 16px;
+  display: block;
+  padding-bottom: 16px;
+  font-size: 18px;
+}
+.sec03 > div .left ul li p:before {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #131313;
+  transform: rotate(45deg);
+}
+.sec03 > div .right {
+  width: 50%;
+  padding-left: 60px;
+  border-left: 1px solid #131313;
+}
+
+.sec04 > div div > p {
+  padding-left: 16px;
+}
+.sec04 > div div div {
+  display: flex;
+}
+.sec04 > div div div i {
+  width: 50%;
+  margin-top: 20px;
+  padding: 48px 32px;
+  background: #fff;
+  margin-right: 60px;
+  border-radius: 24px;
+  order: 1px solid #efefef;
+}
+.sec04 > div div div ul {
+  width: 50%;
+  padding-left: 60px;
+  padding-top: 20px;
+  border-left: 1px solid #131313;
+}
+.sec04 > div div div ul li {
+  padding-bottom: 20px;
+}
+.sec04 > div div div ul li span {
+  font-weight: 600;
+  color: #0b439b;
+  display: block;
+  padding-bottom: 5px;
+}
+.sec04 > div div div ul li span em {
+  border: 1px solid #0b439b;
+  padding: 5px 0px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  background: #fff;
+  color: #0b439b;
+  margin-right: 12px;
+}
+.sec05 div div {
+  max-width: 1200px;
+  background: #fff;
+  padding: 0;
+  margin: 100px auto;
+  padding: 48px;
+  border-radius: 32px;
+}
+
+.sec06 ul.set01 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sec06 ul.set01 li {
+  width: 50%;
+  padding: 0px 16px;
+  margin-bottom: 32px;
+}
+.sec06 ul.set01 li > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 24px;
+}
+.sec06 ul.set01 li > div div {
+  width: calc(100% - 350px);
+  padding-right: 16px;
+}
+.sec06 ul.set01 li > div div h4 {
+  padding-bottom: 20px;
+}
+.sec06 ul.set01 li > div div h4 span {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #0b439b;
+  background: #fff;
+  border-radius: 50%;
+  padding: 0px 8px;
+  font-weight: 600;
+}
+.sec06 ul.set01 li > div div p {
+  position: relative;
+  padding-bottom: 5px;
+  padding-left: 16px;
+}
+.sec06 ul.set01 li > div div p:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #0b439b;
+  border-radius: 50%;
+  left: 0;
+  top: 10px;
+}
+.sec06 ul.set01 li > div i {
+  display: block;
+  width: 350px;
+}
+.sec06 ul.set01 li > div i img {
+  border: 1px solid #efefef;
+}
+.sec06 ul.set01 li:nth-child(3), .sec06 ul.set01 li:nth-child(4) {
+  margin-bottom: 0;
+}
+.sec06 ul.set02 {
+  margin-top: 24px;
+  display: flex;
+}
+.sec06 ul.set02 li {
+  width: 50%;
+}
+
+@media (max-width: 1440px) {
+  p {
+    font-size: 16px;
+  }
+  .sec03 > div .left {
+    margin-right: 40px;
+  }
+  .sec03 > div .right {
+    padding-left: 40px;
+  }
+  .sec03 > div .left ul li p {
+    font-size: 16px;
+  }
+  .sec04 > div div div ul {
+    padding-left: 40px;
+  }
+  .sec03 > div .left {
+    padding-left: 40px;
+  }
+  .sec04 > div div div i {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .sec01 > div > div > i {
+    width: 40%;
+  }
+  .sec01 > div > div > i:before {
+    width: 90%;
+    height: 90%;
+  }
+  .sec03 > div div {
+    flex-direction: column-reverse;
+  }
+  .sec03 > div .right {
+    padding-left: 0;
+    border-left: 0;
+    margin: 0 auto;
+    width: 600px;
+  }
+  .sec03 > div .left {
+    width: 100%;
+    padding-top: 50px;
+  }
+  .sec04 > div div div {
+    flex-direction: column;
+  }
+  .sec04 > div div div ul {
+    padding-left: 0px;
+    width: 100%;
+    border-left: 0px;
+    padding-top: 40px;
+  }
+  .sec04 > div div div i {
+    margin-right: 0px;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .sec04 > div div > p {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+}
+@media (max-width: 860px) {
+  .sec01 > div > div {
+    flex-direction: column;
+  }
+  .sec01 > div > div > div i {
+    width: 400px;
+  }
+  .sec01 > div > div > i {
+    margin-top: 50px;
+  }
+  .sec01 > div > div > i:before {
+    display: none;
+  }
+  .sec01 > div > div span {
+    font-size: 24px;
+    text-align: center;
+    display: block;
+  }
+}
+@media (max-width: 760px) {
+  header {
+    padding: 20px;
+    height: 70px;
+  }
+  header nav ul li a {
+    font-size: 15px;
+  }
+  .sec01 {
+    height: 70vh;
+  }
+  .sec01 > div > div > div i {
+    width: 300px;
+  }
+  .sec03 > div .right {
+    width: 500px;
+    max-width: 100%;
+  }
+  .sec04 > div div div i {
+    width: 500px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .sec01 {
+    height: 60vh;
+  }
+  .sec01 > div > div {
+    padding: 0px;
+  }
+  .sec01 > div > div > div i {
+    width: 250px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
