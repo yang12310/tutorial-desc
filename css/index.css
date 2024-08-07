@@ -1,7 +1,7 @@
 @import url(./reset.css);
 @import url(./style.css);
 .wrap {
-  background: #E9E9E9;
+  background: #FFFBEB;
 }
 
 header {
@@ -12,8 +12,9 @@ header {
   top: 0;
   height: 100px;
   width: 100%;
-  background: #fff;
-  border-bottom: 1px solid #131313;
+  background: #1A2645;
+  color: #FFFBEB;
+  border-bottom: 1px solid #FFFBEB;
 }
 header nav {
   width: 100%;
@@ -28,23 +29,47 @@ header nav ul li {
 header nav ul li a {
   display: block;
   width: 100%;
+  font-weight: 600;
 }
 
+section {
+  background: #FFFBEB;
+  padding-top: 120px;
+}
 section > div h3 {
   font-weight: 700;
-  font-size: 24px;
-  color: #131313;
-  padding: 20px 0px 20px 10px;
-  border-bottom: 1px solid #131313;
-  border-top: 1px solid #131313;
+  font-size: 50px;
+  color: #1A2645;
+}
+section > div h3 em {
+  display: block;
+  font-size: 80px;
+  font-weight: 800;
+  opacity: 0.2;
+}
+section > div h3 span {
+  position: relative;
+  bottom: 55px;
+  left: 16px;
 }
 section > div > div {
-  padding: 100px 0px;
+  padding: 24px 0px 60px;
+}
+section > div > p {
+  border-bottom: 1px solid #1A2645;
+  text-align: right;
+}
+section > div > p span {
+  display: block;
+  padding-right: 10px;
+  padding-bottom: 8px;
 }
 
 .sec01 {
-  height: 100vh;
+  height: 850px;
   position: relative;
+  background: #1A2645;
+  padding-top: 0px;
 }
 .sec01 > div {
   position: absolute;
@@ -55,31 +80,38 @@ section > div > div {
 }
 .sec01 > div > div {
   display: flex;
+  padding: 0;
   align-items: center;
   justify-content: space-between;
 }
-.sec01 > div > div > div i {
+.sec01 > div > div > div {
+  width: 60%;
+}
+.sec01 > div > div > div > div {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sec01 > div > div > div > div i {
   width: 500px;
   display: block;
 }
 .sec01 > div > div > i {
   position: relative;
   display: block;
-  width: 500px;
+  width: 40%;
+  height: 847px;
+}
+.sec01 > div > div > i img {
+  height: 100%;
 }
 .sec01 > div > div span {
-  font-size: 32px;
-}
-.sec01 > div > div > i:before {
-  position: absolute;
-  content: "";
-  width: 470px;
-  height: 470px;
-  background: #fff;
-  border-radius: 50%;
-  transform: translateX(-50%);
-  box-shadow: -4px 3px 10px rgba(0, 0, 0, 0.07);
-  z-index: -1;
+  font-size: 28px;
+  color: #FFFBEB;
+  font-weight: 600;
+  display: inline-block;
+  padding-top: 24px;
+  padding-left: 10px;
 }
 .sec01 > div p {
   text-align: right;
@@ -89,17 +121,18 @@ section > div > div {
 
 .sec03 > div div {
   display: flex;
+  align-items: center;
 }
 .sec03 > div .left {
   width: 50%;
-  margin-right: 60px;
+  margin-right: 100px;
   padding-top: 20px;
 }
 .sec03 > div .left ul li p {
   position: relative;
   padding-left: 16px;
   display: block;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
   font-size: 18px;
 }
 .sec03 > div .left ul li p:before {
@@ -114,8 +147,7 @@ section > div > div {
 }
 .sec03 > div .right {
   width: 50%;
-  padding-left: 60px;
-  border-left: 1px solid #131313;
+  border: 1px solid #ccc;
 }
 
 .sec04 > div div > p {
@@ -123,53 +155,46 @@ section > div > div {
 }
 .sec04 > div div div {
   display: flex;
+  align-items: center;
 }
 .sec04 > div div div i {
   width: 50%;
   margin-top: 20px;
-  padding: 48px 32px;
+  padding: 56px 48px;
   background: #fff;
-  margin-right: 60px;
-  border-radius: 24px;
-  order: 1px solid #efefef;
+  margin-right: 100px;
+  border: 1px solid #ccc;
 }
 .sec04 > div div div ul {
   width: 50%;
-  padding-left: 60px;
   padding-top: 20px;
-  border-left: 1px solid #131313;
 }
 .sec04 > div div div ul li {
   padding-bottom: 20px;
 }
 .sec04 > div div div ul li span {
   font-weight: 600;
-  color: #0b439b;
+  font-size: 20px;
+  color: #1A2645;
   display: block;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
 }
 .sec04 > div div div ul li span em {
-  border: 1px solid #0b439b;
-  padding: 5px 0px;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  color: #1A2645;
   display: inline-block;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  vertical-align: middle;
-  background: #fff;
-  color: #0b439b;
   margin-right: 12px;
 }
+.sec04 > div div div ul li p {
+  color: #555;
+}
+
 .sec05 div div {
-  max-width: 1200px;
+  max-width: 1400px;
+  border: 1px solid #ccc;
   background: #fff;
   padding: 0;
-  margin: 100px auto;
+  margin: 24px auto 60px;
   padding: 48px;
-  border-radius: 32px;
 }
 
 .sec06 ul.set01 {
@@ -186,38 +211,33 @@ section > div > div {
   flex-direction: row;
   justify-content: space-between;
   background: #fff;
-  padding: 30px 20px;
-  border-radius: 24px;
+  padding: 32px 28px;
+  border: 1px solid #ccc;
 }
 .sec06 ul.set01 li > div div {
   width: calc(100% - 350px);
-  padding-right: 16px;
+  padding-right: 24px;
 }
 .sec06 ul.set01 li > div div h4 {
   padding-bottom: 20px;
 }
 .sec06 ul.set01 li > div div h4 span {
-  width: 30px;
-  height: 30px;
+  font-size: 20px;
   display: inline-block;
-  margin-right: 10px;
-  border: 1px solid #0b439b;
-  background: #fff;
-  border-radius: 50%;
-  padding: 0px 8px;
-  font-weight: 600;
+  margin-right: 8px;
 }
 .sec06 ul.set01 li > div div p {
   position: relative;
   padding-bottom: 5px;
   padding-left: 16px;
+  color: #333;
 }
 .sec06 ul.set01 li > div div p:before {
   position: absolute;
   content: "";
   width: 5px;
   height: 5px;
-  background: #0b439b;
+  background: #1A2645;
   border-radius: 50%;
   left: 0;
   top: 10px;
@@ -241,14 +261,17 @@ section > div > div {
 }
 
 @media (max-width: 1440px) {
+  .sec01 > div > div > div > div {
+    padding-left: 16px;
+  }
+  .sec01 > div > div > div > div i {
+    width: 360px;
+  }
   p {
     font-size: 16px;
   }
   .sec03 > div .left {
     margin-right: 40px;
-  }
-  .sec03 > div .right {
-    padding-left: 40px;
   }
   .sec03 > div .left ul li p {
     font-size: 16px;
@@ -256,33 +279,54 @@ section > div > div {
   .sec04 > div div div ul {
     padding-left: 40px;
   }
-  .sec03 > div .left {
-    padding-left: 40px;
-  }
   .sec04 > div div div i {
     margin-right: 40px;
   }
-}
-@media (max-width: 1024px) {
-  .sec01 > div > div > i {
-    width: 40%;
+  .sec06 ul.set01 {
+    flex-direction: column;
   }
-  .sec01 > div > div > i:before {
-    width: 90%;
-    height: 90%;
+  .sec06 ul.set01 li {
+    width: 100%;
+    padding: 0;
+  }
+  .sec06 ul.set01 li > div i {
+    width: 550px;
+  }
+  .sec06 ul.set01 li:nth-child(3) {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 1200px) {
+  section {
+    padding-top: 100px;
+  }
+  section > div > div {
+    padding-top: 0px;
+  }
+  section > div h3 {
+    font-size: 36px;
+  }
+  section > div h3 em {
+    font-size: 70px;
+  }
+  .sec01 > div > div > div {
+    width: 50%;
+  }
+  .sec01 > div > div > i {
+    width: 50%;
   }
   .sec03 > div div {
     flex-direction: column-reverse;
   }
   .sec03 > div .right {
-    padding-left: 0;
-    border-left: 0;
     margin: 0 auto;
     width: 600px;
+    max-width: 100%;
   }
   .sec03 > div .left {
     width: 100%;
     padding-top: 50px;
+    margin-right: 0px;
   }
   .sec04 > div div div {
     flex-direction: column;
@@ -295,23 +339,63 @@ section > div > div {
   }
   .sec04 > div div div i {
     margin-right: 0px;
-    width: 600px;
+    width: 700px;
     margin: 0 auto;
+    max-width: 100%;
   }
   .sec04 > div div > p {
     margin-bottom: 24px;
     text-align: center;
   }
+  .sec06 ul.set01 li > div div {
+    width: 100%;
+    padding-right: 0px;
+    margin-top: 32px;
+  }
 }
-@media (max-width: 860px) {
+@media (max-width: 960px) {
+  .sec01 {
+    height: 720px;
+  }
+  .sec01 > div {
+    position: relative;
+    left: inherit;
+    top: inherit;
+    transform: inherit;
+    width: 100%;
+    height: 100%;
+  }
+  .sec01 > div > div > div > div {
+    padding: 0px 16px;
+    position: relative;
+    text-align: center;
+  }
+  .sec01 > div > div > i img {
+    height: 230%;
+    transform: rotate(8deg);
+    width: 100%;
+  }
   .sec01 > div > div {
     flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .sec01 > div > div > div > div i {
+    margin: 0 auto;
+    width: 280px;
+  }
+  .sec01 > div > div > div {
+    width: 100%;
   }
   .sec01 > div > div > div i {
     width: 400px;
   }
   .sec01 > div > div > i {
     margin-top: 50px;
+    width: 110%;
+    height: 350px;
+    overflow: hidden;
   }
   .sec01 > div > div > i:before {
     display: none;
@@ -320,18 +404,56 @@ section > div > div {
     font-size: 24px;
     text-align: center;
     display: block;
+    padding-left: 0px;
+  }
+  .sec06 ul.set01 li > div {
+    flex-direction: column-reverse;
+  }
+  .sec06 ul.set01 li > div i {
+    width: 470px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .sec06 ul.set01 li > div {
+    background: none;
+    padding: 0;
+    border: 0;
+    margin-bottom: 50px;
+  }
+  .sec06 ul.set01 li > div div {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  .sec06 ul.set01 li:last-child > div {
+    margin-bottom: 0px;
+  }
+  section > div > p span {
+    font-size: 13px;
   }
 }
 @media (max-width: 760px) {
+  section > div h3 {
+    font-size: 28px;
+  }
+  section > div h3 em {
+    font-size: 50px;
+  }
+  section > div h3 span {
+    bottom: 40px;
+  }
+  .sec05 div div {
+    margin-top: 0px;
+  }
   header {
-    padding: 20px;
+    padding: 20px 8px;
     height: 70px;
   }
   header nav ul li a {
     font-size: 15px;
   }
   .sec01 {
-    height: 70vh;
+    height: 690px;
   }
   .sec01 > div > div > div i {
     width: 300px;
@@ -346,14 +468,83 @@ section > div > div {
   }
 }
 @media (max-width: 500px) {
+  section > div > div {
+    padding-bottom: 40px;
+  }
+  section > div h3 {
+    font-size: 20px;
+  }
+  section > div h3 em {
+    font-size: 32px;
+  }
+  section > div h3 span {
+    left: 10px;
+    bottom: 26px;
+  }
+  header nav ul li a {
+    font-size: 13px;
+  }
+  section {
+    padding-top: 70px;
+  }
   .sec01 {
-    height: 60vh;
+    height: 480px;
   }
   .sec01 > div > div {
     padding: 0px;
   }
   .sec01 > div > div > div i {
     width: 250px;
+  }
+  .sec01 > div > div span {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+  .sec01 > div > div > i {
+    height: 190px;
+  }
+  .sec01 > div > div > div > div i {
+    width: 200px;
+  }
+  .sec03 > div .left {
+    padding-top: 40px;
+  }
+  .sec03 > div .left ul li p {
+    font-size: 14px;
+    padding-bottom: 12px;
+  }
+  .sec04 > div div > p {
+    padding-left: 0px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: left;
+  }
+  .sec04 > div div div ul li span {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  .sec04 > div div div ul li span em {
+    margin-right: 7px;
+  }
+  .sec04 > div div div ul li p {
+    font-size: 14px;
+  }
+  .sec06 ul.set01 li {
+    margin-bottom: 16px;
+  }
+  .sec06 ul.set01 li > div div {
+    padding: 16px;
+    margin-top: 16px;
+  }
+  .sec06 ul.set01 li > div div h4 {
+    padding-bottom: 10px;
+    font-size: 16px !important;
+  }
+  .sec06 ul.set01 li > div div h4 span {
+    font-size: 16px;
+  }
+  .sec06 ul.set01 li > div div p {
+    font-size: 14px;
   }
 }
 
