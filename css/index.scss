@@ -207,11 +207,12 @@ section{ background:#FFFBEB;  padding-top:120px;
 }
 
 @include tabletToMobile{
+  header nav{padding-left:0px !important; padding-right:0px !important;}
   section > div > div{padding-bottom:40px;}
   section > div h3{font-size: 20px;}
   section > div h3 em{font-size: 32px;}
   section > div h3 span{left:10px; bottom:26px;}
-  header nav ul li a{font-size: 13px;}
+  header nav ul li a{font-size: 13px; padding:0px 3px;font-weight: 500;}
   section{padding-top:70px;}
   .sec01{height:480px;}
   .sec01 > div > div{padding:0px;}
